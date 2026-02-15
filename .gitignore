@@ -1,28 +1,47 @@
-# Node.js dependencies
+# Dependencies
 node_modules/
+**/node_modules/
 
-# Build output
-build/
+# Environment files
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Build outputs
 dist/
+build/
+coverage/
+frontend/dist/
 
 # Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# IDE settings
+# OS / Editor
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
+
+# Runtime / cache
+*.pid
+*.seed
+*.pid.lock
+.cache/
+.parcel-cache/
+
+# IDE settings (Windows)
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 
-# OS-specific files
-.DS_Store
-Thumbs.db
+# Local env variants
+.env.local
+.env.*.local
